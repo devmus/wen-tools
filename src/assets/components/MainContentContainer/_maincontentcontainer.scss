@@ -1,0 +1,9 @@
+.main-content-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-1;
+  border: 3px solid $border-color-1;
+  border-radius: 150px;
+}

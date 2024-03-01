@@ -1,0 +1,13 @@
+.heading{
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: $font-large;
+  background-color: $background-color-1;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 5px;
+  color: $content-text-color;
+  text-shadow: 3px 3px 3px $content-text-shadow;
+}

@@ -1,0 +1,240 @@
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-image: url("./src/assets/images/backg/backg5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#root {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol, ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(218, 124, 255, 0.4);
+  border-top: 2px solid rgba(200, 61, 255, 0.6);
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+  width: 100%;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  margin: 20px;
+}
+header .header-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+header .header-container h1 {
+  font-size: 5rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.main-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(200, 61, 255, 0.2);
+  border: 3px solid rgba(200, 61, 255, 0.6);
+  border-radius: 150px;
+}
+
+.inner-content-container {
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+.description-container {
+  padding: 10px;
+  background-color: rgba(218, 124, 255, 0.4);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+}
+.description-container .input-desc {
+  display: flex;
+  flex-direction: column;
+}
+.description-container .input-desc h3 {
+  margin-right: 5px;
+  color: rgb(131, 255, 193);
+  text-shadow: 1px 1px 3px rgba(22, 0, 31, 0.8);
+}
+.description-container .output-desc {
+  display: flex;
+  flex-direction: column;
+}
+.description-container .output-desc h3 {
+  margin-top: 10px;
+  margin-right: 5px;
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px rgba(245, 218, 255, 0.8);
+}
+
+.form-container {
+  padding: 10px;
+  background-color: rgba(218, 124, 255, 0.4);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+}
+.form-container #inputform {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.form-container #inputform .form-control {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+  width: 100%;
+}
+.form-container #inputform .form-control input {
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(227, 161, 255, 0.6);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  text-align: right;
+  text-indent: 10%;
+  color: rgb(131, 255, 193);
+  text-shadow: 1px 1px 3px rgba(22, 0, 31, 0.8);
+}
+.form-container #inputform .form-control input::placeholder {
+  color: rgb(131, 255, 193);
+  text-shadow: 1px 1px 1px rgba(22, 0, 31, 0.8);
+}
+.form-container #inputform .form-control-button {
+  display: flex;
+  justify-content: end;
+}
+.form-container #inputform .form-control-button .form-submit {
+  margin-top: 1rem;
+  color: white;
+  padding: 10px;
+  background-color: rgba(218, 124, 255, 0.4);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+}
+
+.display {
+  padding: 10px;
+  background-color: rgba(218, 124, 255, 0.4);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+}
+.display div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculations {
+  padding: 10px;
+  background-color: rgba(218, 124, 255, 0.4);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+}
+.calculations div {
+  display: flex;
+  justify-content: space-between;
+}
+.calculations span {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px rgba(245, 218, 255, 0.8);
+}
+
+.heading {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: rgba(200, 61, 255, 0.2);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  padding: 5px;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+}

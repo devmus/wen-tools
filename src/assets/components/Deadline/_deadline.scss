@@ -1,0 +1,143 @@
+
+.inner-content-container{
+  width: 80%;
+  margin-bottom: 4rem;
+}
+
+//Description//
+
+.description-container{
+  padding: 10px;
+  background-color: $background-color-2;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+  font-size: $font-small;
+  color: $content-text-color;
+  text-shadow: 3px 3px 3px $content-text-shadow;
+
+  .input-desc{
+    display: flex;
+    flex-direction: column;
+
+    h3{
+      margin-right: 5px;
+      color:$content-text-color-dark;
+      text-shadow: 1px 1px 3px $content-text-shadow-dark;
+    }
+  }
+
+  .output-desc{
+    display: flex;
+    flex-direction: column;
+
+    h3{
+      margin-top: 10px;
+      margin-right: 5px;
+      color:$content-text-color-black;
+      text-shadow: 1px 1px 3px $content-text-shadow-light;
+    }
+  }
+}
+
+//Form//
+
+.form-container{
+  padding: 10px;
+  background-color: $background-color-2;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  display: flex;
+
+  #inputform{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .form-control{
+      padding: 10px;
+      border-radius: 10px;
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      font-size: $font-small;
+      color: $content-text-color;
+      text-shadow: 3px 3px 3px $content-text-shadow;
+      width: 100%;
+    
+      input{
+        width: 100%;
+        padding: 10px;
+        background-color: $background-color-3;
+        border: 2px solid $border-color-1;
+        border-radius: 10px;
+        text-align: right;
+        text-indent:10%;
+        color:$content-text-color-dark;
+        text-shadow: 1px 1px 3px $content-text-shadow-dark;
+      }
+
+      input::placeholder{
+        color:$content-text-color-dark;
+        text-shadow: 1px 1px 1px $content-text-shadow-dark;
+       }
+    }
+
+    .form-control-button{
+    display: flex;
+    justify-content: end;
+
+      .form-submit{
+        margin-top: 1rem;
+        color:$content-text-color;
+        padding: 10px;
+        background-color: $background-color-2;
+        border: 2px solid $border-color-1;
+        border-radius: 10px;       
+      }
+    }
+  }
+}
+
+.display{
+  padding: 10px;
+  background-color: $background-color-2;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: $font-small;
+  color: $content-text-color;
+  text-shadow: 3px 3px 3px $content-text-shadow;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.calculations{
+  padding: 10px;
+  background-color: $background-color-2;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: $font-small;
+  color: $content-text-color;
+  text-shadow: 3px 3px 3px $content-text-shadow;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span{
+    color:$content-text-color-black;
+    text-shadow: 1px 1px 3px $content-text-shadow-light;
+  }
+}
