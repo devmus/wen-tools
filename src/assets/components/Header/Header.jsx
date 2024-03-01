@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import logo from "/src/assets/images/logo.png";
 
 export const Header = () => {
   return (
     <header>
       <div className="header-container">
-        <img src="./src/assets/images/logo.png" alt="WEN tools logo"/>
-        {/* <h1>WEN tools</h1> */}
+        <img src={logo} alt="WEN tools logo"/>
       </div>
     </header>
   )
