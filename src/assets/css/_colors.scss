@@ -2,6 +2,12 @@ $background-color-1: rgba(200, 61, 255, 0.2);
 $background-color-2: rgba(218, 124, 255, 0.4);
 $background-color-3: rgba(227, 161, 255, 0.6);
 
+$input-focus-color: rgba(227, 161, 255, 1);
+$border-color-focus: rgba(200, 61, 255, 0.8);
+
+$button-select-color: rgb(93, 226, 159);
+$button-deselect-color: rgb(255, 71, 71);
+
 $border-color-1: rgba(200, 61, 255, 0.6);
 
 $content-text-color: white;
@@ -9,5 +15,5 @@ $content-text-color-dark: rgb(131, 255, 193);
 $content-text-color-black: rgb(0, 0, 0);
 
 $content-text-shadow: rgba(200, 61, 255, 1);
-$content-text-shadow-dark: rgba(22, 0, 31, 0.8);
-$content-text-shadow-light: rgba(245, 218, 255, 0.8);
+$content-text-shadow-dark: rgba(22, 0, 31, 1);
+$content-text-shadow-light: rgba(245, 218, 255, 1);

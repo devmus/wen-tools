@@ -2,11 +2,14 @@
 @import "src/assets/css/fontsize";
 @import "src/assets/css/basic";
 @import "src/assets/css/reset";
+@import "src/assets/css/form";
 
 @import "src/assets/components/Footer/footer";
 @import "src/assets/components/Header/header";
+@import "src/assets/components/Menu/menu";
 @import "src/assets/components/MainContentContainer/maincontentcontainer";
 
-@import "src/assets/components/Deadline/deadline";
-@import "src/assets/components/Heading/heading";
-
+@import "src/assets/components/MainContentContainer/Deadline/deadline";
+@import "src/assets/components/MainContentContainer/Timezone/timezone";
+@import "src/assets/components/MainContentContainer/Heading/heading";
+@import "src/assets/components/MainContentContainer/Description/description";
