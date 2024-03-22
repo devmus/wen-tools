@@ -1,8 +1,10 @@
-# React + Vite
+### About wen tools
+Hobby project, wen tools is a website with apps to use for calculating future dates or for converting time from one custom timezone to your local timezone. These are tools I have found useful and been trying to find on the web but unsuccessfully so I've built my own. 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+(wen timezone is not fully completed yet)
 
-Currently, two official plugins are available:
+## Development dependencies, libraries, etc.
+- Vite (React & Vanilla JS)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Deployment URL:
+https://devmus.github.io/wen-tools/
