@@ -13,3 +13,45 @@
   width: 80%;
   margin-bottom: 4rem;
 }
+
+.display{
+  padding: 10px;
+  background-color: $background-color-2;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: $font-small;
+  color: $content-text-color;
+  text-shadow: 3px 3px 3px $content-text-shadow;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span{
+    text-align: end;
+  }
+}
+
+.calculations{
+  padding: 10px;
+  background-color: $background-color-2;
+  border: 2px solid $border-color-1;
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: $font-small;
+  color: $content-text-color;
+  text-shadow: 3px 3px 3px $content-text-shadow;
+
+  div{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  span{
+    color:$content-text-color-black;
+    text-shadow: 1px 1px 3px $content-text-shadow-light;
+    text-align: end;
+  }
+}

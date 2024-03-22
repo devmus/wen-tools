@@ -3,7 +3,7 @@ body {
   min-width: 100vw;
   display: flex;
   justify-content: center;
-  background-image: url("./src/assets/images/backg/backg5.jpg");
+  background-image: url("/src/assets/images/backg/backg5.webp");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Kode Mono", monospace;
@@ -58,7 +58,7 @@ textarea {
 
 .form-container {
   padding: 10px;
-  background-color: rgba(218, 124, 255, 0.4);
+  background-color: hsla(300, 80%, 75%, 0.8);
   border: 2px solid rgba(200, 61, 255, 0.6);
   border-radius: 10px;
   margin-top: 1rem;
@@ -85,7 +85,7 @@ textarea {
 .form-container #inputform .form-control input {
   width: 100%;
   padding: 10px;
-  background-color: rgba(227, 161, 255, 0.6);
+  background-color: hsla(300, 90%, 81%, 0.8);
   border: 2px solid rgba(200, 61, 255, 0.6);
   border-radius: 10px;
   text-align: right;
@@ -94,7 +94,7 @@ textarea {
   text-shadow: 1px 1px 3px rgb(22, 0, 31);
 }
 .form-container #inputform .form-control input:focus, .form-container #inputform .form-control input:hover {
-  background-color: rgb(227, 161, 255);
+  background-color: rgb(209, 101, 255);
   border: 2px solid rgba(200, 61, 255, 0.8);
 }
 .form-container #inputform .form-control input::placeholder {
@@ -104,13 +104,17 @@ textarea {
 .form-container #inputform .form-control select {
   width: 100%;
   padding: 10px;
-  background-color: rgba(227, 161, 255, 0.6);
+  background-color: hsla(300, 90%, 81%, 0.8);
   border: 2px solid rgba(200, 61, 255, 0.6);
   border-radius: 10px;
   text-align: right;
   text-indent: 10%;
   color: rgb(131, 255, 193);
   text-shadow: 1px 1px 3px rgb(22, 0, 31);
+}
+.form-container #inputform .form-control select:hover, .form-container #inputform .form-control select:focus {
+  background-color: rgb(209, 101, 255);
+  border: 2px solid rgba(200, 61, 255, 0.8);
 }
 .form-container #inputform .form-control-button {
   display: flex;
@@ -120,49 +124,15 @@ textarea {
   margin-top: 1rem;
   color: white;
   padding: 10px;
-  background-color: rgba(218, 124, 255, 0.4);
+  background-color: hsla(300, 80%, 75%, 0.8);
   border: 2px solid rgba(200, 61, 255, 0.6);
   border-radius: 10px;
   text-shadow: 1px 1px 3px rgb(22, 0, 31);
 }
 .form-container #inputform .form-control-button .form-submit:focus, .form-container #inputform .form-control-button .form-submit:hover {
   cursor: pointer;
-  background-color: rgb(227, 161, 255);
+  background-color: rgb(209, 101, 255);
   border: 2px solid rgba(200, 61, 255, 0.8);
-}
-
-.display {
-  padding: 10px;
-  background-color: rgba(218, 124, 255, 0.4);
-  border: 2px solid rgba(200, 61, 255, 0.6);
-  border-radius: 10px;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: white;
-  text-shadow: 3px 3px 3px rgb(200, 61, 255);
-}
-.display div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.calculations {
-  padding: 10px;
-  background-color: rgba(218, 124, 255, 0.4);
-  border: 2px solid rgba(200, 61, 255, 0.6);
-  border-radius: 10px;
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: white;
-  text-shadow: 3px 3px 3px rgb(200, 61, 255);
-}
-.calculations div {
-  display: flex;
-  justify-content: space-between;
-}
-.calculations span {
-  color: rgb(0, 0, 0);
-  text-shadow: 1px 1px 3px rgb(245, 218, 255);
 }
 
 footer {
@@ -171,7 +141,7 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: center;
-  background-color: rgba(218, 124, 255, 0.4);
+  background-color: hsla(300, 80%, 75%, 0.8);
   border-top: 2px solid rgba(200, 61, 255, 0.6);
   font-size: 1.2rem;
   color: white;
@@ -209,7 +179,7 @@ header .header-container h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(200, 61, 255, 0.2);
+  background-color: hsla(310, 45%, 60%, 0.8);
   border: 3px solid rgba(200, 61, 255, 0.6);
   border-radius: 150px;
   margin: 10px;
@@ -220,12 +190,51 @@ header .header-container h1 {
   margin-bottom: 4rem;
 }
 
+.display {
+  padding: 10px;
+  background-color: hsla(300, 80%, 75%, 0.8);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+}
+.display div {
+  display: flex;
+  justify-content: space-between;
+}
+.display span {
+  text-align: end;
+}
+
+.calculations {
+  padding: 10px;
+  background-color: hsla(300, 80%, 75%, 0.8);
+  border: 2px solid rgba(200, 61, 255, 0.6);
+  border-radius: 10px;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(200, 61, 255);
+}
+.calculations div {
+  display: flex;
+  justify-content: space-between;
+}
+.calculations span {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px rgb(245, 218, 255);
+  text-align: end;
+}
+
 .heading {
   max-width: 50%;
   display: flex;
   justify-content: center;
+  text-align: center;
   font-size: 2rem;
-  background-color: rgba(200, 61, 255, 0.2);
+  background-color: hsla(300, 80%, 75%, 0.8);
   border: 2px solid rgba(200, 61, 255, 0.6);
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -234,7 +243,7 @@ header .header-container h1 {
   text-shadow: 3px 3px 3px rgb(200, 61, 255);
   cursor: pointer;
 }
-.heading:hover {
+.heading:hover, .heading:focus {
   background-color: rgb(93, 226, 159);
   transition: 0.5s ease-in;
 }
@@ -242,14 +251,14 @@ header .header-container h1 {
   margin-top: 1rem;
 }
 
-.selected:hover {
+.selected:hover, .selected:focus {
   background-color: rgb(255, 71, 71);
   transition: 0.5s ease-out;
 }
 
 .description-container {
   padding: 10px;
-  background-color: rgba(218, 124, 255, 0.4);
+  background-color: hsla(300, 80%, 75%, 0.8);
   border: 2px solid rgba(200, 61, 255, 0.6);
   border-radius: 10px;
   display: flex;
